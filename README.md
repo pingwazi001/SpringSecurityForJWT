@@ -40,7 +40,7 @@
     </dependencies>
 </project>
 ```
-## 2、表写JwtUtils工具包
+## 2、编写JwtUtils工具包
 主要用于生成jwt token串和获取token串中的载荷值。现在只有两个最核心的方法，当然你可以吧这个工具包扩展得更加强大。
 ```java
 /**
@@ -243,7 +243,7 @@ public class JWTAuthenticationTokenFilter extends OncePerRequestFilter {
 }
 ```
 ## 7、编写SpringSecurity的配置类
-配置类中使用了我们自定义的filter和两个错误处理器，其中配置那些接口允许访问，那些接口不能放回也是十分方便的。
+配置类中使用了我们自定义的filter和两个错误处理器，其中配置那些接口允许访问，那些接口不能访问也是十分方便的。
 ```java
 /**
  * @author pingwazi
